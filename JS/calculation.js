@@ -145,7 +145,7 @@ function calculation() {
     "R$ " + notPlan.toFixed(2).toString().replace(".", ",");
   //console.log("valor sem plano", notPlan);
 
-  let withPlan = Number(Math.max(time - planItem.minutes, 0) * areaCodeItem.price);
+  let withPlan = Number((Math.max(time - planItem.minutes, 0) * areaCodeItem.price)*1.10);
   document.getElementById("withPlan").innerHTML = 
     "R$ " + withPlan.toFixed(2).toString().replace(".", ",");
   //console.log("valor com plano", withPlan);
