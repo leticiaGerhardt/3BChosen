@@ -131,7 +131,7 @@ header {
 
 .block-label-input select,
 .block-label-input input {
-  width: 85px;
+  width: 105px;
   border-radius: 3px;
   border: 1px solid #ff9029;
   padding: 5px;
@@ -141,7 +141,7 @@ header {
   color: #ff9029 !important;
   font-size: 11px;
   font-weight: 600;
-  width: 74px;
+  width: 90px;
 }
 
 .block-label-input label {
