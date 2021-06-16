@@ -1,0 +1,369 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2f1f1;
+}
+
+.logo {
+  width: auto;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  text-align: start;
+  color: #316d98;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.figure-top {
+  width: 100%;
+  height: 100%;
+}
+
+.figure-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.figure-top .img-top,
+.figure-top .img-top-test {
+  display: none;
+}
+
+.figure-top a {
+  display: none;
+}
+
+.plans {
+  width: 100%;
+  height: auto;
+  margin: 60px 0;
+}
+
+.title-plans,
+.calculation h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff9029;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-plans {
+  display: flex;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.plan span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.plan30 {
+  background-color: #a7cad1;
+}
+
+.plan60 {
+  background-color: #316d98;
+}
+
+.plan120 {
+  background-color: #ff9029;
+}
+
+
+.calculation {
+  width: 290px;
+  margin: 0 auto 40px auto;
+  border: 1px solid #ff9029;
+  border-radius: 3px;
+  padding: 15px;
+  background-color: white;
+}
+
+.container-label-input {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+  font-weight: 600;
+  color: #316d98;
+  margin-top: 30px;
+}
+
+.block-label-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-label-input select,
+.block-label-input input {
+  width: 85px;
+  border-radius: 3px;
+  border: 1px solid #ff9029;
+  padding: 5px;
+}
+
+.block-label-input input {
+  color: #ff9029 !important;
+  font-size: 11px;
+  font-weight: 600;
+  width: 74px;
+}
+
+.block-label-input label {
+  display: flex;
+  align-self: center;
+}
+
+.container-label-input #button {
+  background-color: #316d98;
+  border: none;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  padding: 7px;
+  border-radius: 3px;
+  width: 180px;
+  margin: 20px auto 0 auto;
+  transition: background-color ease 0.3s;
+}
+
+.container-label-input #button:hover{
+    background-color: #ff9029;
+}
+
+select,
+option,
+option.selected {
+  color: #ff9029 !important;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 20px 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2;
+  color: #316d98;
+}
+
+.table-price {
+  margin-left: 10px;
+  color: #ff9029;
+}
+
+.alert {
+  font-size: 11px;
+  font-weight: 600;
+  color: red;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+footer span {
+  font-size: 10px;
+  font-weight: 600;
+  color: grey;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .plans {
+    margin: 50px 0;
+  }
+  .title-plans,
+  .calculation h2 {
+    font-size: 30px;
+  }
+  .plan {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+  }
+  .plan span {
+    font-size: 18px;
+  }
+  .calculation {
+    width: 400px;
+    padding: 35px;
+    margin: 0 auto 60px auto;
+  }
+  .container-label-input {
+    font-size: 12px;
+  }
+
+  .block-label-input select,
+  .block-label-input input {
+    width: 115px;
+  }
+  .block-label-input input {
+    width: 104px;
+  }
+  select,
+  option,
+  option.selected {
+    font-size: 12px;
+  }
+
+  .container-label-input #button {
+    font-size: 16px;
+    width: 280px;
+    margin: 50px auto 20px auto;
+  }
+  .table {
+    font-size: 14px;
+  }
+
+  .alert {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    font-size: 26px;
+    padding: 30px 0;
+  }
+  .figure-top .img-top,
+  .figure-top .img-top-mobile {
+    display: none;
+  }
+
+  .figure-top .img-top-test {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .figure-top a {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+  }
+  .figure-top .icon-scroll-top {
+    height: 60px;
+    width: 60px;
+  }
+  .plans {
+    margin: 100px 0;
+  }
+
+  .container-plans {
+    grid-gap: 30px;
+  }
+
+  .plan {
+    width: 160px;
+    height: 160px;
+  }
+  .plan span {
+    font-size: 23px;
+    padding-top: 10px;
+  }
+
+  .title-plans,
+  .calculation h2 {
+    margin-bottom: 50px;
+  }
+
+  .container-label-input {
+    font-size: 14px;
+  }
+
+  .calculation {
+    width: 425px;
+    padding: 25px;
+    margin: 0 auto 40px auto;
+  }
+
+  .block-label-input select,
+  .block-label-input {
+    padding: 10px;
+  }
+
+  .block-label-input select,
+  .block-label-input input {
+    width: 145px;
+  }
+  .block-label-input label {
+    width: 200px;
+  }
+
+  .block-label-input input {
+    width: 130px;
+    margin-left: 60px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  select,
+  option,
+  option.selected {
+    font-size: 14px;
+  }
+
+  .container-label-input #button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+
+  .alert {
+    font-size: 16px;
+  }
+
+  footer span {
+    font-size: 11px;
+  }
+}

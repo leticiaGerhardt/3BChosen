@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3BChosen</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">3BChosen</h1>
+    </header>
+
+    <figure class="figure-top" id="section1">
+      <img class="img-top-mobile" src="img/girl-phone-mobile.jpg"/>
+      <img class="img-top-test" src="img/girl-phone-teste.jpg" />
+      <a href="#section2"><img class="icon-scroll-top" src="img/outline_expand_more_white_24dp.png"></a>
+    </figure>
+
+    <div class="container"  id="section2">
+      <section class="plans">
+        <h2 class="title-plans">Planos FaleMais</h2>
+        <ul  class="container-plans">
+            <li class="plan30 plan" id="plan30">
+              <span>FaleMais 30</span>
+            </li>
+            <li class="plan60 plan" id="plan60">
+              <span>FaleMais 60</span>
+            </li>
+            <li class="plan120 plan" id="plan120">
+              <span>FaleMais 120</span>
+            </li>
+          </ul>
+      </section>
+
+      <section class="calculation">
+        <h2>Calcule para falar mais pagando menos</h2>
+        <div class="container-label-input">
+          <div class="block-label-input">
+            <label for="origin">Escolha o código da cidade de origem</label>
+            <select id="origin" required>
+              <option selected>DDD</option>
+            </select>
+          </div>
+
+          <div class="block-label-input">
+            <label for="destination"
+              >Informe o código da cidade de destino</label
+            >
+            <select id="destination" required>
+              <option selected>DDD</option>
+            </select>
+          </div>
+
+          <div class="block-label-input">
+            <label for="time">Informe o tempo da ligação em minutos</label>
+            <input type="number" id="time" required />
+          </div>
+
+          <div class="block-label-input">
+            <label for="plan">Escolha seu plano FaleMais</label>
+            <select id="plan" required>
+              <option selected>FaleMais</option>
+            </select>
+          </div>
+          <button id="button" onclick="calculation()">Calcular</button>
+
+          <table class="table">
+            <tr>
+              <td>Com o Plano você vai pagar:</td>
+              <td>
+                <span class="table-price" type="text" id="withPlan"></span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Sem o Plano você vai pagar:</td>
+              <td>
+                <span class="table-price" type="text" id="notPlan"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <span class="alert" id="alert"></span>
+    </div>
+
+    <footer class="footer">
+      <span>Copyright &copy; 2021 3BChosen</span>
+    </footer>
+
+  </body>
+  <script type="text/javascript" src="JS/calculation.js"></script>
+</html>
